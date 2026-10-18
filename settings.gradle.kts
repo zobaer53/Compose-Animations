@@ -22,6 +22,7 @@ include(":app")
 // Reusable Canvas characters. They only draw; they know nothing about the screens using them.
 include(":characters:dog")
 include(":characters:sprout")
+include(":characters:stormcloud")
 
 // Full screens built around the characters.
 include(":demos:forgetpassword")
