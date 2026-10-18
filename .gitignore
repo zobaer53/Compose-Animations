@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+.kotlin/
+build/
+/local.properties
+/captures
+.externalNativeBuild
+.cxx
+.DS_Store
+.idea/
+
+# Personal notes and reference material, not part of the repo; only the README's media is.
+/docs/*
+!/docs/media/
