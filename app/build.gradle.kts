@@ -26,6 +26,7 @@ android {
 dependencies {
     // One line per demo; also add it to Demos.kt.
     implementation(project(":demos:forgetpassword"))
+    implementation(project(":demos:dailycheckin"))
 
     implementation(libs.androidx.activity.compose)
 
