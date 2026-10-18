@@ -26,3 +26,4 @@ include(":characters:stormcloud")
 
 // Full screens built around the characters.
 include(":demos:forgetpassword")
+include(":demos:dailycheckin")
