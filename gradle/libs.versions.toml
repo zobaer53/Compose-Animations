@@ -1,0 +1,34 @@
+[versions]
+agp = "9.4.1"
+kotlin = "2.4.21"
+compileSdk = "37"
+targetSdk = "37"
+minSdk = "24"
+
+activity = "1.13.0"
+composeBom = "2026.09.00"
+
+[libraries]
+# AGP 9 compiles Kotlin itself (built-in Kotlin); this pins the Kotlin Gradle plugin it uses.
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-foundation = { module = "androidx.compose.foundation:foundation" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+
+# Only used to compile build-logic.
+android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+# Convention plugins from build-logic.
+composeanimations-character = { id = "composeanimations.character" }
+composeanimations-demo = { id = "composeanimations.demo" }
