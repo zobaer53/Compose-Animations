@@ -15,3 +15,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ComposeAnimations"
+
+// Reusable Canvas characters. They only draw; they know nothing about the screens using them.
+include(":characters:dog")
