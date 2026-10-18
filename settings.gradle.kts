@@ -16,6 +16,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ComposeAnimations"
 
+// The showcase app that lists and opens every demo.
+include(":app")
+
 // Reusable Canvas characters. They only draw; they know nothing about the screens using them.
 include(":characters:dog")
 
