@@ -30,6 +30,11 @@ dependencies {
 
     implementation(libs.androidx.activity.compose)
 
+    // The README cover (src/debug) draws the characters directly.
+    debugImplementation(project(":characters:dog"))
+    debugImplementation(project(":characters:sprout"))
+    debugImplementation(project(":characters:stormcloud"))
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)

@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- Debug only: renders the README cover to a PNG. Started by scripts/record-demos.sh. -->
+        <activity
+            android:name=".cover.CoverActivity"
+            android:exported="true" />
+    </application>
+</manifest>
